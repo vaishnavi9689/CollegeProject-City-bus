@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>bus</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <style>
+    .offcanvas-header {
+      background-color: rgb(37, 7, 134);
+    }
+
+    .offcanvas-title {
+      color: white;
+    }
+
+    .nav-link {
+      background-color: white;
+      color: rgb(4, 4, 98);
+    }
+
+    .canvas-body {
+      align-content: center;
+      margin-top: 80px;
+    }
+
+    .navbar {
+      background-color: rgb(170, 170, 239) !important;
+    }
+
+    .dropdown {
+      margin-right: 60px; /* Adjust as needed */
+    }
+  </style>
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <div>
+    <nav class="navbar bg-body-tertiary fixed-top">
+
+      <div class="container-fluid">
+        <button class="navbar-toggler me-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon ms-0"></span>
+        </button>
+        <a class="navbar-brand me-auto" href="#">Where is my BUS</a>
+        <div class="dropdown">
+          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Create Online Pass
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" >Daily Pass</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">40rs </a></li>
+                <li><a class="dropdown-item" href="#">Option 2</a></li>
+              </ul>
+            </li>
+            <li><a class="dropdown-item" href="#">Monthly Pass</a></li>
+          </ul>
+        </div>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title me-3" id="offcanvasNavbarLabel">Where is my Bus</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link me-10" aria-current="page" href="#">Setting</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Clear Recent Searches</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="https://forms.gle/aoaw7gkjSnASLSFr8">Report issue</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="https://forms.gle/RTiCiFexH2RCBWeMA">Suggest feature</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Share to Whatsapp</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Invite Friends</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <table></table>
+    <center>
+      <div class="canvas-body">
+        <br>
+        <label>From</label>
+        <input type="text" id="from" placeholder="from" autofocus>
+      </div>
+      <br>
+      <div><label>To</label>
+        <input type="text" id="to" placeholder="destination">
+      </div>
+      <br>
+      <button type="button" id="search" name="Search" value="Search" onclick="" style="background:green">Search</button>
+    </center>
+  </div>
+</body>
+
+</html>
